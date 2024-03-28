@@ -1,6 +1,6 @@
 # Desafío para Dev
 
-Nombre postulante: [TU NOMBRE]
+Nombre postulante: Gonzalez Darío Gabriel
 Link a la app en producción: [LINK DEL DEPLOY]
 
 ## Instrucciones
