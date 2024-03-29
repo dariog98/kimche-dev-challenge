@@ -4,7 +4,6 @@ const useCustomSearchParams = () => {
     const [searchParams, setSearchParams] = useSearchParams()
 
     const setParam = (key, value) => {
-        console.log(key, value)
         setSearchParams(params => {
             value ? params.set(key, value) : params.delete(key)
             return params

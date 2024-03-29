@@ -11,7 +11,7 @@ const Modal= ({ data, show, handleClose }) => {
                 <div className='fade modal show d-block' tabIndex='-1'>
                     <div className={`modal-dialog modal-dialog-centered modal-lg`}>
 
-                        <div className='modal-content shadow-lg'>
+                        <div className='modal-content modal-box border-0'>
                             <div className='position-absolute' style={{ top: 0, right: 0 }}>
                                 <button
                                     className='btn btn-outline-light rounded-circle m-2'
@@ -26,7 +26,7 @@ const Modal= ({ data, show, handleClose }) => {
                             <div className='d-flex flex-wrap' style={{ borderRadius: 'inherit' }}>
                                 <img src={data.image} className='modal-image'/>
 
-                                <div className='flex-grow-1 d-flex flex-column gap-2 justify-content-center align-items-center p-3'>
+                                <div className='flex-grow-1 d-flex flex-column gap-2 justify-content-center p-3'>
                                     <span className='fw-bold text-light fs-4'>{data.name}</span>
                                     <div>
                                         <span className='fw-bold text-light pe-1'>Status:</span>
