@@ -28,7 +28,7 @@ const Main = () => {
     }
 
     return (
-        <main className='container'>
+        <main className='flex-grow-1 container'>
             <div className='py-5 d-flex flex-column gap-5 align-items-center'>
                 <Filters
                     setParam={handleFilterParams}
