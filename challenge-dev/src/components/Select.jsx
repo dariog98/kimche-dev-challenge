@@ -1,7 +1,7 @@
-const Select = ({ options, defaultValue, handleOnChange }) => {
+const Select = ({ options, value, handleOnChange }) => {
     return (
-        <div>
-            <select className='form-select' defaultValue={defaultValue} onChange={handleOnChange}>
+        <div className='input-group'>
+            <select className='form-select' value={value} onChange={handleOnChange}>
                 {options.map((option, index) => <option key={index} value={option.value}>{option.label}</option>)}
             </select>
         </div>

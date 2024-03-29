@@ -11,6 +11,7 @@ const ALL_CHARACTERS = gql`
                 name,
                 status,
                 species,
+                gender,
                 type,
                 image,
                 location {
@@ -26,4 +27,5 @@ const ALL_CHARACTERS = gql`
         }
     }
 `
+
 export { ALL_CHARACTERS }

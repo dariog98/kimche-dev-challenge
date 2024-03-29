@@ -1,11 +1,11 @@
-const CharactersGrid = ({ characters }) => {
+const CharactersGrid = ({ characters, handleOpenModal }) => {
     return (
-        <div className='characters-grid'>
+        <div className='w-100 characters-grid'>
             {
                 characters.map(character =>
-                    <div key={character.id} className='card overflow-hidden position-relative'>
-                        <img src={character.image} alt={character.name}/>
-                        <div className='position-absolute text-light d-flex justify-content-center p-2' style={{ backgroundColor: '#00000090', bottom: 0, left: 0, right: 0 }}>
+                    <div key={character.id} className='card position-relative rounded-4 character-item-box' onClick={() => handleOpenModal(character)}>
+                        <img className='character-item-image' src={character.image} alt={character.name}/>
+                        <div className='character-item-data text-light fw-bold d-flex justify-content-center p-2'>
                             {character.name}
                         </div>
                     </div>
