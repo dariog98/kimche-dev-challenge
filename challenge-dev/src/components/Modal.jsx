@@ -42,7 +42,7 @@ const Modal= ({ data, show, handleClose }) => {
                                     </div>
                                     <div>
                                         <span className='fw-bold text-light pe-1'>Type:</span>
-                                        <span>{data.type}</span>
+                                        <span>{data.type == "" ? 'unknown' : data.type}</span>
                                     </div>
                                     <div>
                                         <span className='fw-bold text-light pe-1'>Location:</span>

@@ -39,7 +39,7 @@ const Init = () => {
 
                 {
                     loading ?
-                    <div className='flex-grow-1 d-flex justify-content-center align-items-center'>
+                    <div className='flex-grow-1 my-5 d-flex justify-content-center align-items-center'>
                         <Loading/>
                     </div>
                     : data?.characters.results.length > 0
@@ -59,7 +59,7 @@ const Init = () => {
                                 handleClose={handleClose}
                             />
                         </>
-                        : <div className='flex-grow-1 d-flex justify-content-center align-items-center'>
+                        : <div className='flex-grow-1 my-5 d-flex justify-content-center align-items-center'>
                             <NoCharactersFound/>
                         </div>
                 }
