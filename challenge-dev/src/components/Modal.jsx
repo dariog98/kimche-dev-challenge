@@ -14,8 +14,8 @@ const Modal= ({ data, show, handleClose }) => {
                         <div className='modal-content modal-box border-0'>
                             <div className='position-absolute' style={{ top: 0, right: 0 }}>
                                 <button
-                                    className='btn btn-outline-light rounded-circle m-2'
-                                    style={{ width: '2.5rem', height: '2.5rem' }}
+                                    className='btn btn-light rounded-circle m-2 shadow-lg'
+                                    style={{ width: '2rem', height: '2rem' }}
                                     onClick={handleClose}
                                 >
                                     <div className='d-flex justify-content-center align-items-center'>

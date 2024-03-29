@@ -29,7 +29,7 @@ const Init = () => {
 
     return (
         <main className='vh-100 container'>
-            <div className='py-4 d-flex flex-column gap-5 align-items-center'>
+            <div className='my-4 d-flex flex-column gap-5 align-items-center'>
                 <RickAndMortyLogo/>
                 <Filters
                     setParam={handleFilterParams}
