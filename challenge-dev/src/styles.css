@@ -1,3 +1,11 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: #00000040;
+}
 .characters-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -48,6 +56,19 @@
         border-bottom-left-radius: 0;
         width: 100%;
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+}
+
+.underline-on-hover {
+    text-decoration: none;
+}
+
+.underline-on-hover:hover {
+    text-decoration: underline;
 }
 
 .btn-outline-system {
