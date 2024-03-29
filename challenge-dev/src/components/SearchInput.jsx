@@ -5,14 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const SearchInput = ({ placeholder, handleSearch, value }) => {
     const searchRef = useRef()
 
-    const handleEnter = ({ keyCode }) => {
-        if (keyCode === 13) {
-            handleSearch(searchRef.current.value)
-        }
-    }
-
     useEffect(() => {
         searchRef.current.value = value ?? ''
+        searchRef.current.onsearch = () => {
+            handleSearch(searchRef.current.value)
+        }
     }, [value])
 
     return (
@@ -24,10 +21,9 @@ const SearchInput = ({ placeholder, handleSearch, value }) => {
 
                 <input
                     ref={searchRef}
-                    type='text'
+                    type='search'
                     className='form-control'
                     placeholder={placeholder}
-                    onKeyDown={handleEnter}
                 />
             </div>
         </>
