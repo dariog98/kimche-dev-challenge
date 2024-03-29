@@ -1,5 +1,5 @@
 import { CharactersGrid, Filters, Loading, Modal, NoCharactersFound, Pagination, RickAndMortyLogo } from '../components'
-import { ALL_CHARACTERS } from '../constats/queries'
+import { ALL_CHARACTERS } from '../constants/queries'
 import { useCustomSearchParams, useModal } from '../hooks'
 import { useQuery } from '@apollo/client'
 
