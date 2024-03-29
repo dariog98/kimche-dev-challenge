@@ -6,7 +6,7 @@ const NoCharactersFound = () => {
         <div className='d-flex flex-column gap-2'>
             <FontAwesomeIcon icon={faTriangleExclamation} size='10x'/>
             <span className='fw-bolder fs-5'>
-                No characters was found
+                No characters found
             </span>
         </div>
     )

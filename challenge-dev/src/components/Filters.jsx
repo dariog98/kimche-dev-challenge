@@ -12,14 +12,15 @@ const Filters = ({ setParam, getParam, resetParams }) => {
     return (
         <div className='w-100 d-flex flex-column gap-3'>
             <SearchInput
-                placeholder='Search...'
+                placeholder='Type and press enter to search...'
                 value={name}
                 handleSearch={(value) => setParam('name', value)}
             />
             
-            <div className='d-flex flex-wrap gap-3'>
+            <div className='d-flex flex-wrap align-items-end gap-3'>
                 <div className='flex-grow-1'>
                     <Select
+                        label='Status'
                         name='status'
                         value={status ?? ''}
                         handleOnChange={({target}) => setParam('status', target.value)}
@@ -34,6 +35,7 @@ const Filters = ({ setParam, getParam, resetParams }) => {
 
                 <div className='flex-grow-1'>
                     <Select
+                        label='Species'
                         name='species'
                         value={species ?? ''}
                         handleOnChange={({target}) => setParam('species', target.value)}
@@ -55,6 +57,7 @@ const Filters = ({ setParam, getParam, resetParams }) => {
 
                 <div className='flex-grow-1'>
                     <Select
+                        label='Gender'
                         name='gender'
                         value={gender ?? ''}
                         handleOnChange={({target}) => setParam('gender', target.value)}
