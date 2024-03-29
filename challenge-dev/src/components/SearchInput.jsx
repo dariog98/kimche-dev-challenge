@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const SearchInput = ({ placeholder, handleSearch, value }) => {
     const searchRef = useRef()
 
-    const handleEnter = ({key}) => {
-        if (key === 'Enter') {
+    const handleEnter = ({ keyCode }) => {
+        if (keyCode === 13) {
             handleSearch(searchRef.current.value)
         }
     }
