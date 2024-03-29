@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { ApolloProvider } from'@apollo/client'
-import RickAndMortyClient from './constats/RickAndMortyClient.jsx'
+import RickAndMortyClient from './constants/RickAndMortyClient.jsx'
 import './bootstrap.css'
 import './styles.css'
 

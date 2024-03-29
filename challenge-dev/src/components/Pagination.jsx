@@ -1,4 +1,4 @@
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesRight, faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
 import Button from './Button'
 
 const getPaginationPages = (currentPage, totalPages) => {
@@ -40,10 +40,11 @@ const Pagination = ({ currentPage, totalPages, handlePage }) => {
         <div>
             <div className='input-group'>
                 <Button
+                    title='First page'
                     className='btn-outline-system'
                     isDisabled={!totalPages}
                     handleOnClick={goToFirstPage}
-                    icon={faChevronLeft}
+                    icon={faAnglesLeft}
                 />
 
                 {
@@ -62,10 +63,11 @@ const Pagination = ({ currentPage, totalPages, handlePage }) => {
                 }
 
                 <Button
+                    title='Last page'
                     className='btn-outline-system'
                     isDisabled={!totalPages}
                     handleOnClick={goToLastPage}
-                    icon={faChevronRight}
+                    icon={faAnglesRight}
                 />
             </div>
         </div>
